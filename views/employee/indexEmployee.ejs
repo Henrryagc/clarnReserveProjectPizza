@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Employee</title>
+    <!--Estilos index admin-->
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    
+    <!--Estilos index admin-->
+    <link rel="stylesheet" href="/stylesheets/employee/indexEmployee.css">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <h2>Inicio</h2>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">PEDIDOS<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">VENTAS</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              REGISTROS
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">------</a>
+          </li>
+        </ul>
+      </div>
+      
+      <button class="btn btn-danger" onclick="salir()">Salir</button>
+      
+    </nav>
+<br><br>
+    <!--<h1><%= title %></h1>
+    Hello from Employee index page -->
+
+    <div class="table rounded">
+        <h3>Lista de pedidos</h3>
+        <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nombres</th>
+                <th scope="col">Direccion</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Imagen</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Markos Marques</td>
+                <td>Av zepita N 456 segundo piso</td>
+                <td>5</td>
+                <td><img src="/images/pizza.jpg" width="80px" height="50px" ></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob Yamato</td>
+                <td>Calle los palamos N 458 departamento 12</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Sofia Campos</td>
+                <td>Calle Arica N 12 Segundo piso</td>
+                <td>2</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+
+
+    <!--Scripts-->
+    <script src="/javascripts/jquery-3.5.1.slim.min.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+    <script src="/javascripts/employee/frmemployee.js"></script>
+    <script src="/javascripts/popper.min.js"></script>   
+    <script src="/javascripts/Chart.js"></script>
+  
+  </body>
+</html>

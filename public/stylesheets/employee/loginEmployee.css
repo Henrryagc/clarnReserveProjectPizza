@@ -1,0 +1,18 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background: #2c4251;
+    color: #ffffff;
+}
+
+.form{
+    background: #d16666;
+    width: 50%;
+    margin: auto;
+    padding: 1rem;
+    border-radius: .8rem;
+    margin-top: 150px;
+}
+
+#log-btn{
+    background: #003459;
+}

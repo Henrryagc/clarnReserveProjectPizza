@@ -1,0 +1,30 @@
+{
+  "name": "clarn",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "./app.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "express-myconnection": "^1.0.4",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "mysql": "^2.18.1"
+  },
+  "main": "app.js",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^26.4.2",
+    "superagent": "^6.1.0",
+    "supertest": "^4.0.2"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

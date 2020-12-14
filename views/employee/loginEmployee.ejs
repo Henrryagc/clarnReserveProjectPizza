@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Employee</title>
+
+    <!--Estilos index admin-->
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
+
+    <!--Estilos index admin-->
+    <link rel="stylesheet" href="/stylesheets/employee/loginEmployee.css" />
+  </head>
+
+  <body>
+    <!--<h1><%= title %></h1>-->
+    <h1>Iniciar como Empleado</h1>
+    <div class="form">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputText1">Cuenta de Usuario</label>
+          <input type="text" class="form-control" id="employee-user" />
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Contraseña</label>
+          <input type="password" class="form-control" id="employee-password" />
+        </div>
+      </div>
+      <button
+        id="log-btn"
+        type="submit"
+        class="btn btn-primary"
+        onclick="IniciarSesion()"
+      >
+        Ingresar
+      </button>
+      <!-- Incluyendo contenido de modal -->
+      <%- include('modal'); -%>
+    </div>
+
+    <!--Es importante que el jquery este cargado antes del boostraap-->    
+    <script src="/javascripts/jquery-3.5.1.slim.min.js"></script>
+    <script src="/javascripts/jquery-3.5.1.js"></script>
+    <script src="/javascripts/popper.min.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+    <script src="/javascripts/employee/frmemployee.js"></script>
+  </body>
+</html>

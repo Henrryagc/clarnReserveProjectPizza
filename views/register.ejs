@@ -1,0 +1,87 @@
+
+<div id="registrar-content">
+    <h3>CREAR CUENTA</h3>
+    <div class="form was-validated">
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="validationServer01">Nombres</label>
+            <input type="text" class="form-control" id="validationServer01" placeholder="Lucy Layla" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="validationServer02">Apellidos</label>
+            <input type="text" class="form-control" id="validationServer02" placeholder="Clarn" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+              <label for="validationServer03">Correo Electrónico</label>
+              <input type="email" class="form-control" id="validationServer03" placeholder="ejempl@ejemplo.com" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+              <label for="validationServer04">Contraseña</label>
+              <input type="password" class="form-control" id="validationServer04" placeholder="*******" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="validationServer05">Repetir Contraseña</label>
+                <input type="password" class="form-control" id="validationServer05" placeholder="*******" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="validationServer06">Celular</label>
+            <input type="text" class="form-control" id="validationServer06" maxlength="9" placeholder="999999999" onkeypress='return event.charCode >= 48 && event.charCode <= 57' required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+      </div>
+      <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label for="validationServer07">Dirección</label>
+          <input type="text" class="form-control" id="validationServer07" placeholder="Jr. Abtao Nº 254" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+    </div>
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <!-- Tal vez Por zonas sería mucho mejor-->
+            <div id="verDistrito">            
+            </div>            
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+            <label class="custom-control-label" for="customControlValidation1">Seleccione este campo para confirmar que acepta los terminos y condiciones..</label>
+            <div class="invalid-feedback">Debe de leer y aceptar los terminos y condiciones.</div>
+          </div>
+        </div>
+          <div id="myAlerta" class="alert alert-success" role="alert" style="background: darkgreen;">
+            <strong>Registro creado con exito</strong>
+          </div>
+        <div id="msg"  class="alert" style=" color:#d81159;"></div>
+        <button class="btn btn-success" type="submit" onclick="RegistrarCliente()" >Registrar</button>
+        <a class="btn btn-danger" href="/" >Cancelar</a>        
+      </div>
+</div>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <!--
+    version doc...
+    https://getbootstrap.com/docs/4.5/getting-started/introduction/
+  -->
+    <!-- Estilos y Boostrap-->
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body onload="verMenu()">
+    <!--Incluyendo header-->
+    <%- include('header'); -%>
+
+    <div class="row">
+      <div
+        id="alert"
+        class="alert alert-danger alert-dismissible fade show"
+        role="alert"
+        style="margin: 0 auto;
+        background-color: #b43b47;
+        margin-top: 1.5em;
+        position: fixed;
+        right: 100px;"
+      >
+        <strong>Error al ingresar el usuario...</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
+    <div class="row">
+      <div
+        id="alertIniciarSesion"
+        class="alert alert-danger alert-dismissible fade show"
+        role="alert"
+        style="margin: 0 auto;
+        background-color: #b43b47;
+        margin-top: 1.5em;
+        position: fixed;
+        right: 100px;
+        z-index: 99;"
+      >
+        <strong>Debe de iniciar sessión...</strong>
+      </div>
+    </div>    
+    <div class="messenger" style="position: fixed; margin-top: 10%;">
+      <img src="/images/message.png" alt="" />
+    </div>
+    <div class="carrito" style="cursor: pointer">
+      <a onclick="verPedido()">
+        <img id="carrito" src="/images/carrito.png">
+      </a>
+      <div class="numero-producto">
+        <span id="num" class="badge badge-info">0</span>
+      </div>
+    </div>
+    <!--Contenido Principal-->
+    <%- include('indexContent'); -%>
+
+    <!--Contenido Ubicacion-->
+    <%- include('ubicacion/ubicacion'); -%>
+    
+    <!--Contenido Ubicacion-->
+    <%- include('pedido/frmpedido'); -%>
+
+    <!-- Incluyendo contenido de registro -->
+    <%- include('register'); -%>
+
+    <!--Footer-->
+    <%- include('footer'); -%>
+    
+    <!--Scripts-->
+    <script src="/javascripts/jquery-3.5.1.slim.min.js"></script>
+    <script src="/javascripts/jquery-3.5.1.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+    <script src="/javascripts/popper.min.js"></script>
+    <script src="/javascripts/frmindex.js"></script>
+    <script src="/javascripts/customer/frmCustomerLogin.js"></script>
+    <script src="/javascripts/customer/frmCustomerInsert.js"></script>
+    <script src="/javascripts/pedido/frmpedido.js"></script>
+  </body>
+</html>

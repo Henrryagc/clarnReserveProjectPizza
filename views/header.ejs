@@ -1,0 +1,117 @@
+<!-- Estilos Personalizados-->
+<link rel="stylesheet" href="/stylesheets/header.css"/>
+<!--Navegador-->
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+  <img src="/images/g1546.png" id="pizza-pino" />
+  <a id="pizzeria" class="navbar-brand" href="#">
+    <strong>Pizzeria Pino</strong>
+  </a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a id="inicio" class="nav-link" onclick="verMenu()"
+          >Menú<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a id="ubicacion" class="nav-link" onclick="verUbicacion()"
+          >Ubicación<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a id="pedido" class="nav-link" onclick="verPedido()"
+          >Pedidos<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    <div class="btn_wrap">
+      <div class="span">COMPARTIR</div>
+      <div class="container">
+          <i><a href="http://www.facebook.com/"><img src="/images/icons/icons8-facebook-circled-30.png"></a></i>            
+          <i><a href="http://www.twitter.com/"><img src="/images/icons/icons8-twitter-circled-30.png"></a></i>
+          <i><a href="https://www.instagram.com/"><img src="/images/icons/icons8-instagram-30.png"></a></i>
+          <i><a href="https://web.whatsapp.com/"><img src="/images/icons/icons8-whatsapp-30.png"></a></i>
+      </div>
+  </div>
+    <% if(isTrue){ %>
+      <!-- Ingresar o Registrar -->
+      <form id="form-1" class="form-inline my-2 my-lg-0" style="color: #fff;">
+        <input name='xuser' id="customer-user" type="text" class="form-control" placeholder="Usuario"/>
+        <input name='xxuser' id="customer-password" type="password" class="form-control" placeholder="********"/>
+        <a id="ingresarButton" onclick="IniciarSesion()">Ingresar</a>
+        <a id="registrarButton" class="" onclick="verRegistrar()">Registrar</a>
+      </form>
+      <% } else{ %>
+        <!-- Cuenta 2-->
+        <form id="form-2" class="form-inline my-2 my-lg-0" style="margin-right: 2em;">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <strong><div id="nombreUsuario2" class="nav-link active"><%=nombre %></div></strong>
+            </li>
+            <li class="nav-item dropdown">              
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Cuenta
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/customer/cuenta">Editar Datos</a>
+                <a class="dropdown-item" href="#">-----</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/">Cerrar Sesión</a>
+              </div>
+            </li>
+            <li style="display: grid;align-content: center;">
+              <img src="/images/icons/person.png" />
+            </li>
+          </ul>
+        </form>
+        <% } %>
+         <!-- Cuenta 1-->
+         <form id="form-3" class="form-inline my-2 my-lg-0" style="margin-right: 2em;">
+          <ul class="navbar-nav">
+            <li>
+              <strong><div id="nombreUsuario" class="nav-link active"></div></strong>        
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Cuenta
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" onclick="EditarCuenta()" href="/customer/cuenta">Editar Datos</a>
+                <a class="dropdown-item" href="#">-----</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/">Cerrar Sesión</a>
+              </div>
+            </li>
+            <li style="display: grid;align-content: center;">
+              <img src="/images/icons/person.png" />
+            </li>
+          </ul>
+        </form>
+        <div id="nombreUsuario2"></div>
+  </div>
+</nav>
+</div>

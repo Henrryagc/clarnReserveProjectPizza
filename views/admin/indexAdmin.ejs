@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Admin</title>
+    <!--Estilos index admin-->
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    
+    <!--Estilos index admin-->
+    <link rel="stylesheet" href="/stylesheets/admin/indexAdmin.css">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <h2>Inicio</h2>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Empleados<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ventas</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Registros
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Vistas</a>
+          </li>
+        </ul>
+      </div>
+      <form action="/admin/login">
+        <button id="log-btn" type="submit" class="btn btn-danger">Salir</button>
+      </form>
+      
+    </nav>
+
+    <!--<h1><%= title %></h1>
+    Hello from admin-->
+<br>
+    <div id="graficos">
+      <canvas id="myChart" width="250" height="250"></canvas>
+    </div>
+    
+
+
+    <!--Scripts-->
+    <script src="/javascripts/jquery-3.5.1.slim.min.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+    <script src="/javascripts/popper.min.js"></script>   
+    <script src="/javascripts/Chart.js"></script>
+    <!--Script graficos-->
+    <script src="/javascripts/graficos.js"></script>
+  
+  </body>
+</html>
