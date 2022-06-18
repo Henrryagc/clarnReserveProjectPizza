@@ -33,13 +33,14 @@ app.use(express.static(path.join(__dirname, "public")));
 
 
 app.use(  
-  connection(mysql,{
+  connection(mysql, {      
       host: 'localhost',
       user: 'root',
       password : '',
-      port : 3306, //port mysql
-      database:'clarndb'
-  },'pool') //or single
+      port : 3308, // port mysql
+      database:'clarndb',
+
+  },'pool') // single
 );
 
 
